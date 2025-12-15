@@ -10,7 +10,7 @@ if [[ (${mode} =~ ^fullnode.*  || ${mode} =~ "harvester") && ${blockchains} != '
     if [[ ! -f /chiadog/main.py ]]; then
         echo 'Installing Chiadog from https://github.com/chris-merritt/chiadog using branch: ${CHIADOG_BRANCH}'
         cd /
-        git clone --branch ${CHIADOG_BRANCH} https://github.com/guydavis/chiadog.git
+        git clone --branch ${CHIADOG_BRANCH} https://github.com/chris-merritt/chiadog.git
         cd /chia-blockchain/
         venv/bin/pip3 install -r /chiadog/requirements.txt
     fi
